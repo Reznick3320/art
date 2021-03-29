@@ -1,0 +1,25 @@
+.breadcrumbs {
+    margin-top: 10px;
+    &__list {
+        &-item {
+            display: inline-block;
+            font-size: 14px;
+            padding-right: 15px;
+            position: relative;
+            text-decoration: underline;
+            ::after {
+                content: '/';
+                position: absolute;
+                right: 0;
+                width: 7px;
+                height: 23px;
+            }
+            &:last-child {
+                text-decoration: none;
+            }
+            &:last-child::after {
+                display: none;
+            }
+        }
+    }
+}

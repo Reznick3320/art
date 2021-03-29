@@ -1,0 +1,23 @@
+.menu {
+    padding: 26px 0;
+    background-color: #767676;
+    &__item {
+        padding-right: 22px;
+        border-right: 3px solid #ffffff;
+        &:last-child {
+            border-right: none;
+        }
+    }
+    &__list {
+        display: flex;
+        justify-content: space-around;
+    }
+    &__link {
+        color: #ffffff;
+        font-size: 30px;
+        font-weight: 400;
+        &:hover {
+            border-bottom: 3px solid #ffffff;
+        }
+    }
+}

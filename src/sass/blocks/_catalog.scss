@@ -1,0 +1,106 @@
+.catalog {
+    &__wrapper {
+        display: flex;
+        margin-top: 27px;
+    }
+    &__left {
+        width: 19%;
+        &-list {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.45px;
+            line-height: 30px;
+        }
+        &-item {
+            font-size: 14px;
+            letter-spacing: 0.35px;
+            line-height: 22px;
+            margin-left: 25px;
+            list-style: disc;
+            &:nth-child(1) {
+                color: #010101;
+                text-decoration: underline;
+            }
+        }
+    }
+    &__box {
+        & > p {
+            font-size: 18px;
+            font-weight: 400;
+            letter-spacing: 0.45px;
+            line-height: 30px;
+            &:nth-child(2) {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__right {
+        width: 81%;
+    }
+    &__products {
+        display: flex;
+        flex-wrap: wrap;
+        position: relative;
+        &-item {
+            margin: 0 15px 20px 0;
+            padding: 20px;
+            background-color: #c3c3c3;
+        }
+        &-title {
+            width: 188px;
+            font-size: 18px;
+            font-weight: 400;
+            margin-top: 20px;
+        }
+        &-price {
+            display: inline-block;
+            color: #444444; 
+            font-size: 28px;
+            font-weight: 700;
+            margin-top: 55px;
+        }
+        &-basket {
+            display: inline-block;
+            margin-left: 50px;
+        }
+    }
+    &__pagination {
+        width: 174px;
+        display: flex;
+        margin: 0 auto;
+        color: #767676; 
+        letter-spacing: 7.91px;
+        font-size: 14px;
+        font-weight: 400;
+        padding-bottom: 67px;
+        & > p {
+            &:nth-child(3) {
+                color: #444444;
+                font-size: 18px;
+                letter-spacing: 10.17px;
+            }
+        }  
+    }
+    &__descr {
+        display: flex;
+        padding-top: 30px;
+        margin-left: 20px;
+        border-top: 1px solid #444444;
+        & > p {
+            margin-right: 40px;
+            width: 370px;
+        }
+    }
+    &__price {
+        &-img {
+            display: block;
+            margin: 110px 0 0 30px ;
+        }
+        &-title {
+            margin-top: 6px;
+            color: #444444;
+            font-size: 30px;
+            font-weight: 700;
+        }
+    }
+}

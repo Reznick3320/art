@@ -1,0 +1,52 @@
+@font-face {
+    font-family: 'Open Sans Regular';
+    src: url('../fonts/OpenSans-Regular.eot');
+    src: url('../fonts/OpenSans-Regular.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/OpenSans-Regular.woff') format('woff'),
+    url('../fonts/OpenSans-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html {
+    box-sizing: border-box;
+    max-width: 1400px;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul, li, p {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+h1, h2, h3, h4 ,h5, h6 {
+    margin: 0;
+
+}
+
+body {
+    color: #767676;
+    font-family: 'PT Sans', sans-serif;
+    line-height: 22px;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.container {
+    max-width: 985px;
+    margin: 0 auto;
+}
+
+@import 'blocks/header';
+@import 'blocks/menu';
+@import 'blocks/breadcrumbs';
+@import 'blocks/catalog';

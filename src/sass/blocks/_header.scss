@@ -1,0 +1,23 @@
+.header {
+    background-color: #c3c3c3;
+    padding: 45px 0 72px 0;
+    &__box {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+    &__phone {
+        font-family: 'Open Sans Regular';
+        font-size: 40px;
+        line-height: 46px
+    }
+    &__descr {
+        display: inline-block;
+        float: right;
+        font-size: 24px;
+        font-weight: 700;
+        border-bottom: 5px dashed #767676;
+    }
+
+}
