@@ -62,6 +62,7 @@
         &-basket {
             display: inline-block;
             margin-left: 50px;
+            cursor: pointer;
         }
     }
     &__pagination {
@@ -73,6 +74,7 @@
         font-size: 14px;
         font-weight: 400;
         padding-bottom: 67px;
+        cursor: pointer;
         & > p {
             &:nth-child(3) {
                 color: #444444;

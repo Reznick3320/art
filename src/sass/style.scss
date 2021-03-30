@@ -33,12 +33,19 @@ h1, h2, h3, h4 ,h5, h6 {
 
 }
 
+.btn {
+    display: block;
+}
+
 body {
+    margin: 0;
+    padding: 0;
     color: #767676;
     font-family: 'PT Sans', sans-serif;
     line-height: 22px;
     font-weight: 400;
     font-size: 14px;
+    position: relative;
 }
 
 .container {
@@ -46,7 +53,26 @@ body {
     margin: 0 auto;
 }
 
+.show {
+    display:block;
+}
+.hide {
+    display:none;
+}
+.fade {
+    animation-name: fade;
+    animation-duration: 1.5s;
+}
+@keyframes fade { 
+    from{opacity: 0.1;}
+    to{opacity: 1;}
+}
+
+
 @import 'blocks/header';
+@import 'blocks/slider';
 @import 'blocks/menu';
 @import 'blocks/breadcrumbs';
 @import 'blocks/catalog';
+@import 'blocks/footer';
+@import 'blocks/modal';

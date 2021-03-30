@@ -1,0 +1,16 @@
+.footer {
+    margin-top: 200px;
+    padding: 50px 0;
+    color: #ffffff;
+    background-color: #767676;
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__nav {
+        &-link {
+            line-height: 26px;
+            text-decoration: underline;
+        }
+    }
+}

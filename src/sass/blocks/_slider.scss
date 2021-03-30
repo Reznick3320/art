@@ -1,0 +1,18 @@
+.slider {
+    &__nav{
+        position: relative;
+        z-index: 9;
+        &-prev,
+        &-next {
+            position: absolute;
+            top: 165px;
+        }
+        &-prev {
+            left: 210px;
+        }
+        &-next {
+            right: 210px;
+        }
+    }
+
+}

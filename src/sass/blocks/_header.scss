@@ -12,12 +12,15 @@
         font-size: 40px;
         line-height: 46px
     }
-    &__descr {
+    &__modal {
         display: inline-block;
         float: right;
         font-size: 24px;
         font-weight: 700;
-        border-bottom: 5px dashed #767676;
+        border-bottom: 4px dashed #767676;
+        margin-top: 10px;
+        padding-bottom: 3px;
+        cursor: pointer;
     }
 
 }

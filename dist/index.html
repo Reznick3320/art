@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>art</title>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.min.css">
@@ -19,6 +19,27 @@
         <title>Art-sites</title>
     </head>
     <body>
+        <div class="feedback hide">
+            <div class="modal hide">
+                <div class="modal__wrapper">
+                    <div class="modal__close"></div>
+                    <h2 class="modal__title">Обратная связь</h2>
+                    <div class="modal__content">
+                        <form action="#">
+                            <p class="modal__name">Ваше имя *</p>
+                            <input class="modal__input" type="text" required >
+                            <p class="modal__phone">Телефон *</p>
+                            <input class="modal__input" type="text" required >
+                            <p class="modal__mail">Email *</p>
+                            <input class="modal__input" type="text" required >
+                            <p class="modal__message">Сообщение</p>
+                            <textarea class="modal__textarea"></textarea>
+                            <button class="btn modal__btn">ОТПРАВИТЬ</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
         <header class="header">
             <div class="container">
                 <div class="header__box">
@@ -32,7 +53,7 @@
                         <p class="header__phone">
                             <a href="tel:+74997777777">+7(499) 777-77-77</a>
                         </p>
-                        <div class="header__descr">Обратная связь</div>
+                        <a class="header__modal">Обратная связь</a>
                     </div>
                 </div>
             </div>
@@ -58,7 +79,26 @@
                 </ul>
             </div>
         </nav>
-        <!--SLIDER!!!!!!!!!!!!!!!-->
+        
+        <div class="slider">
+            <div class="slider__wrapper">
+                <div class="slider__nav">
+                    <div class="slider__nav-prev">
+                        <img src="img/prev.png" alt="prev">
+                    </div>
+                    <div class="slider__nav-next">
+                        <img src="img/next.png" alt="next">
+                    </div>
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider-1.png" alt="slide 1">
+                </div>
+                <div class="slider__item">
+                    <img src="img/slider-2.png" alt="slide 2">
+                </div>
+            </div>
+        </div>
+
         <div class="breadcrumbs">
             <div class="container">
                 <div class="breadcrumbs__list">
@@ -157,7 +197,36 @@
                 </div>
             </div>
         </div>
-    </body>
-    </html>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__copyright">
+                        <p>© 2012–2013 ЗАО «Компания» </p>
+                        <a href="mailto:info@name.ru" class="copyright__mail">info@name.ru</a>
+                    </div>
+                    <ul class="footer__nav">
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Главная</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Каталог</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Доставка и оплата</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Прайс-лист</a>
+                        </li>
+                        <li class="footer__nav-item">
+                            <a href="#" class="footer__nav-link">Контакты</a>
+                        </li>
+                    </ul>
+                    <div class="footer__logo">
+                        <img src="img/footer__logo.png" alt="footer__logo" width="180px" height="39px">
+                    </div>
+                </div>
+            </div>
+        </footer>
 </body>
+    <script src="js/script.js"></script>
 </html>

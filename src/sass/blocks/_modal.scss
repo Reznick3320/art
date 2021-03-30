@@ -1,0 +1,89 @@
+.feedback
+ {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    z-index: 999;
+    background-color: rgba(0, 0, 0, .4);
+}
+.modal {
+    width: 466px;
+    padding: 35px 0 26px;
+    background-color: #fff;
+    margin: 0 auto;
+    border:  2px solid #000;
+    text-align: center;
+    position: absolute;
+    top: 285px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 99;
+    &__close {
+        position: absolute;
+        width: 27px;
+        height: 27px;
+        background-color: #c3c3c3;
+        top: -28px;
+        right: -28px;
+        &::after,
+        &::before {
+            content: '';
+            width: 2px;
+            height: 25px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-left: 12px;
+       
+            transform: rotate(45deg);
+            background-color: #000;
+        }
+        &::before {
+            transform: rotate(-45deg);
+            position: absolute;
+            
+        }
+        
+    }
+    &__title {
+        color: #535353;
+        font-size: 24px;
+        font-weight: 700;
+        text-transform: uppercase;
+        padding-bottom: 15px;
+    }
+    &__name,
+    &__phone,
+    &__mail,
+    &__message {
+        margin-top: 20px;
+        font-size: 14px;
+        font-weight: 700;
+    }
+    &__input {
+        width: 339px;
+        height: 40px;
+        border: 1px solid #c3c3c3;
+        padding: 13px 0 16px 14px;
+        background-color: #ffffff;
+    }
+    &__textarea {
+        width: 339px;
+        height: 140px;
+        border: 1px solid #c3c3c3;
+        background-color: #ffffff;
+        padding: 13px 14px 16px 14px;
+        resize: none;
+    }
+    &__btn {
+        background-color: #535353;
+        margin: 0 auto;
+        padding: 15px;
+        color: #ffffff;
+        font-size: 18px;
+        font-weight: 700;
+        border: none;
+        margin-top: 22px;
+    }
+ 
+}
